@@ -1,11 +1,33 @@
-\documentclass[12pt, letterpaper,twocolumn]{article}
-\usepackage[utf8]{inputenc} % The Document Encoding
-\usepackage{biblatex}
-\addbibresource{teste.bib}
+\documentclass[12pt, a4paper,twocolumn]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							
+% 	PACKAGES			  	  		
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[a4paper,top=2cm,left=1.9cm,right=1.9cm,bottom=2.5cm,columnsep=0.81cm]{geometry} % Setting the page size and margins
+\usepackage[utf8]{inputenc} % The document encoding
+\usepackage{graphicx} % Lib to insert pictures
+\usepackage{biblatex} % Lib to insert references
+\usepackage[brazil]{babel} % Lib to translate to Portuguese
+\addbibresource{ref.bib} % Import the reference file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							
+% 	HEADER			  	  		
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Paper Template}
-\author{ricardo.l.b.reis }
+\author{Ricardo Reis }
 \date{July 2020}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							
+% 	PAPER'S SECTIONS			  	  		
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -14,6 +36,9 @@
 \begin{abstract}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 \end{abstract}
+
+\section*{Keywords}
+Lorem, Ipsum, Dolor
 
 \section{Introdução}
 Let's cite! The Einstein's journal paper \cite{einstein} and the Dirac's 
@@ -24,6 +49,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 \section{Referencial Teórico}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{universe.jpg}
+    \caption{a nice plot}
+    \label{fig:mesh1}
+\end{figure}
 
 \section{Avaliação Experimental}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
