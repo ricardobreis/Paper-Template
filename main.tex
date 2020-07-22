@@ -4,25 +4,40 @@
 %   July 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt, a4paper,twocolumn]{article}
+\documentclass[10pt, a4paper,twocolumn]{article}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	PACKAGES			  	  		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[a4paper,top=1cm,left=1.9cm,right=1.9cm,bottom=2.5cm,columnsep=0.81cm]{geometry} % Setting the page size and margins
-\usepackage[utf8]{inputenc} % The document encoding
+\usepackage[a4paper,top=1cm,left=1.9cm,right=1.9cm,bottom=2.5cm,columnsep=0.81cm]{geometry} % Lib to set the page size and margins
+\usepackage[utf8]{inputenc} % Lib to set the document encoding
 \usepackage{graphicx} % Lib to insert pictures
 \usepackage{biblatex} % Lib to insert references
 \usepackage[brazil]{babel} % Lib to translate to Portuguese
+\usepackage{hyperref} % Lib to insert link on e-mail
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	EXTERNAL FILES			  	  		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \addbibresource{ref.bib} % Import the reference file
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	HEADER			  	  		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Paper Template}
-\author{Ricardo Reis}
+\title{
+    \textbf{Paper Template} % Textbf make the title bold
+    }
+    
+\author{
+    \textbf{Ricardo Reis} \\
+    {\small Curso Lorem Ipsum} \\ % Small make the text small and \\ break the line
+    {\small Instituição Lorem Ipsum Dolor Sit (LIDS)} \\
+    {\small \href{mailto:lorem@gmail.com}{lorem@gmail.com }}
+    }
+    
 \date{July 2020}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
